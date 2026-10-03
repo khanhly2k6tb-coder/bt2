@@ -1,0 +1,417 @@
+```html
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Trang giới thiệu của tôi</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- THANH MENU -->
+    <nav>
+        <a href="#home">Trang chủ</a>
+        <a href="#about">Giới thiệu</a>
+        <a href="#skills">Kỹ năng</a>
+        <a href="#projects">Dự án</a>
+        <a href="#journey">Hành trình</a>
+        <a href="#contact">Liên hệ</a>
+    </nav>
+
+    <button id="theme-toggle" class="theme-toggle">
+    🌙
+</button>
+
+
+    <!-- PHẦN ĐẦU TRANG -->
+    <header id="home">
+
+        <img 
+            src="avt.JPG" 
+            alt="Ảnh đại diện của Ly" 
+            width="300" 
+            class="avatar"
+        >
+
+        <h1>Xin chào, tôi là Nguyễn Thị Khánh Ly</h1>
+
+        <p>
+            Sinh viên khoa công nghệ số liên ngành |
+            Đang học năm 3 tại Đại học Phenikaa
+        </p>
+
+    </header>
+
+
+    <!-- NỘI DUNG CHÍNH -->
+    <main>
+
+        <!-- GIỚI THIỆU -->
+        <section id="about" class="about reveal">
+
+            <h2>Giới thiệu</h2>
+
+            <p>
+                Tôi là sinh viên ngành Thương Mại Điện Tử.
+                Tôi đang học các môn liên quan đến lập trình web
+                và phát triển phần mềm.
+            </p>
+
+        </section>
+
+
+        <!-- KỸ NĂNG -->
+        <section id="skills" class="skills reveal">
+
+    <h2>Kỹ năng</h2>
+
+    <div class="skill">
+
+        <div class="skill-info">
+            <span>💻 HTML / CSS</span>
+            <span>85%</span>
+        </div>
+
+        <div class="skill-bar">
+            <div class="skill-progress html"></div>
+        </div>
+
+    </div>
+
+
+    <div class="skill">
+
+        <div class="skill-info">
+            <span>📊 Data Analysis</span>
+            <span>75%</span>
+        </div>
+
+        <div class="skill-bar">
+            <div class="skill-progress data"></div>
+        </div>
+
+    </div>
+
+
+    <div class="skill">
+
+        <div class="skill-info">
+            <span>🐍 Python</span>
+            <span>80%</span>
+        </div>
+
+        <div class="skill-bar">
+            <div class="skill-progress python"></div>
+        </div>
+
+    </div>
+
+
+    <div class="skill">
+
+        <div class="skill-info">
+            <span>🤖 Machine Learning</span>
+            <span>70%</span>
+        </div>
+
+        <div class="skill-bar">
+            <div class="skill-progress ml"></div>
+        </div>
+
+    </div>
+
+
+    <div class="skill">
+
+        <div class="skill-info">
+            <span>🔬 Research</span>
+            <span>90%</span>
+        </div>
+
+        <div class="skill-bar">
+            <div class="skill-progress research"></div>
+        </div>
+
+    </div>
+
+</section>
+
+
+        <!-- LIÊN HỆ -->
+<section id="contact" class="contact reveal">
+
+    <h2>Liên hệ</h2>
+
+    <p class="contact-intro">
+        Nếu bạn muốn trao đổi về học tập, nghiên cứu hoặc dự án,
+        hãy gửi tin nhắn cho tôi.
+    </p>
+
+    <form id="contact-form">
+
+        <!-- HỌ VÀ TÊN -->
+        <div class="form-group">
+            <label for="name">Họ và tên</label>
+
+            <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Nhập họ và tên của bạn"
+            >
+
+            <small class="error-message" id="name-error"></small>
+        </div>
+
+
+        <!-- EMAIL -->
+        <div class="form-group">
+            <label for="email">Email</label>
+
+            <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="example@gmail.com"
+            >
+
+            <small class="error-message" id="email-error"></small>
+        </div>
+
+
+        <!-- NỘI DUNG -->
+        <div class="form-group">
+            <label for="message">Nội dung</label>
+
+            <textarea
+                id="message"
+                name="message"
+                rows="5"
+                placeholder="Nhập nội dung bạn muốn gửi..."
+            ></textarea>
+
+            <small class="error-message" id="message-error"></small>
+        </div>
+
+
+        <!-- NÚT GỬI -->
+        <button type="submit" class="submit-btn">
+            Gửi tin nhắn
+        </button>
+
+        <!-- THÔNG BÁO THÀNH CÔNG -->
+        <p id="success-message" class="success-message"></p>
+
+    </form>
+
+</section>
+          <!-- DỰ ÁN -->
+<section id="projects" class="projects reveal">
+
+    <h2>Dự án</h2>
+
+    <div class="project-container">
+
+        <!-- PROJECT 1 -->
+        <div class="project-card">
+
+            <div class="project-icon">🛒</div>
+
+            <h3>Machine Learning for E-Commerce</h3>
+
+            <p>
+                Nghiên cứu ứng dụng Machine Learning để
+                dự đoán quyết định mua hàng của khách hàng
+                trong thương mại điện tử.
+            </p>
+
+            <div class="project-tags">
+                <span>Python</span>
+                <span>Machine Learning</span>
+                <span>E-Commerce</span>
+            </div>
+
+            <a href="#" class="project-link">
+                Xem dự án →
+            </a>
+
+        </div>
+
+
+        <!-- PROJECT 2 -->
+        <div class="project-card">
+
+            <div class="project-icon">🤖</div>
+
+            <h3>ReflexRAG</h3>
+
+            <p>
+                Nghiên cứu hệ thống Retrieval-Augmented Generation
+                có khả năng tự đánh giá và cải thiện chất lượng
+                câu trả lời.
+            </p>
+
+            <div class="project-tags">
+                <span>RAG</span>
+                <span>LLM</span>
+                <span>AI</span>
+            </div>
+
+            <a href="#" class="project-link">
+                Xem dự án →
+            </a>
+
+        </div>
+
+
+        <!-- PROJECT 3 -->
+        <div class="project-card">
+
+            <div class="project-icon">🥽</div>
+
+            <h3>AR & STEM Education</h3>
+
+            <p>
+                Ứng dụng công nghệ thực tế tăng cường
+                nhằm nâng cao trải nghiệm học tập STEM
+                thông qua mô hình 3D tương tác.
+            </p>
+
+            <div class="project-tags">
+                <span>AR</span>
+                <span>3D</span>
+                <span>STEM</span>
+            </div>
+
+            <a href="#" class="project-link">
+                Xem dự án →
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- HÀNH TRÌNH -->
+<section id="journey" class="journey reveal">
+
+    <h2>Hành trình của tôi</h2>
+
+    <div class="timeline">
+
+        <!-- MỐC 1 -->
+        <div class="timeline-item left">
+            <div class="timeline-content">
+                <span class="timeline-year">2024</span>
+
+                <h3>Bắt đầu hành trình</h3>
+
+                <p>
+                    Bắt đầu học tập và khám phá lĩnh vực
+                    Thương mại điện tử, công nghệ và dữ liệu.
+                </p>
+            </div>
+        </div>
+
+
+        <!-- MỐC 2 -->
+        <div class="timeline-item right">
+            <div class="timeline-content">
+                <span class="timeline-year">2025</span>
+
+                <h3>Bước vào nghiên cứu khoa học</h3>
+
+                <p>
+                    Thực hiện các dự án nghiên cứu liên quan đến
+                    Machine Learning và dự đoán hành vi mua sắm trực tuyến.
+                </p>
+            </div>
+        </div>
+
+
+        <!-- MỐC 3 -->
+        <div class="timeline-item left">
+            <div class="timeline-content">
+                <span class="timeline-year">2025</span>
+
+                <h3>Phát triển nghiên cứu liên ngành</h3>
+
+                <p>
+                    Mở rộng hướng nghiên cứu sang các ứng dụng
+                    công nghệ trong giáo dục và trải nghiệm STEM.
+                </p>
+            </div>
+        </div>
+
+
+        <!-- MỐC 4 -->
+        <div class="timeline-item right">
+            <div class="timeline-content">
+                <span class="timeline-year">2026</span>
+
+                <h3>Phát triển ReflexRAG</h3>
+
+                <p>
+                    Nghiên cứu hệ thống RAG có khả năng tự đánh giá
+                    và cải thiện chất lượng phản hồi.
+                </p>
+            </div>
+        </div>
+
+
+        <!-- MỐC 5 -->
+        <div class="timeline-item left">
+            <div class="timeline-content">
+                <span class="timeline-year">Tương lai</span>
+
+                <h3>Tiếp tục phát triển</h3>
+
+                <p>
+                    Tiếp tục học hỏi, nghiên cứu và xây dựng
+                    những sản phẩm công nghệ có giá trị thực tế.
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+            <h2>Liên hệ</h2>
+
+            <p>
+                Email: khanhly2k6tb@gmail.com
+            </p>
+
+            <p>
+                <a 
+                    href="https://github.com" 
+                    target="_blank"
+                >
+                    GitHub của tôi
+                </a>
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <!-- CHÂN TRANG -->
+    <footer>
+
+        <p>
+            &copy; 2026 - Trang web đầu tiên của tôi
+        </p>
+
+    </footer>
+
+<script src="script.js"></script>
+</body>
+</html>
+```
